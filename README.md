@@ -14,11 +14,27 @@ it is recommended to use WSL (Windows Subsytem for Linux).
 
 ## Getting Started
 
-To launch the client and server together , run `docker-compose up`
+The project uses Make commands listed in the [Makefile](Makefile) for ease of development.
+
+Please refer to [Makefile](Makefile) for a list of all commands. Some of the most common ones are listed as follows:
+
+`make run` : Launches the application using docker (Builds the images if they haven't been built before)
+`make stop` : Stops any running containers
+`make build` : (Re-)Builds container images listed in the docker-compose.
+`make clean` : Purges containers, images and volumes.
+`make restart` : Stops the app, rebuilds the images and restarts the app.
+`make server-test` : Runs the server unit tests.
+`make client-test` : Runs the client unit tests.
+
+NOTE: If you're having any unexpected issues, it's best to run `make rebuild` to cleanup and rebuild containers from scratch.
 
 ## Container Information
 
 - The client container exposes port 3000 and can be viewed by visiting http://localhost:3000
+
+## CI/CD
+
+- The application uses Github Workflows to run CI/CD pipelines. For more information checkout the [Github Actions Readme](.github/workflows/README.md)
 
 ## License
 

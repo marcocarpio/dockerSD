@@ -9,6 +9,8 @@ dist
 *.swp
 .tern-port
 .nvimrc
+*.pyc
+*.ds_store
 
 # Icon must end with two \r
 Icon
