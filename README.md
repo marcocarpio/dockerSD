@@ -37,6 +37,8 @@ NOTE: If you're having any unexpected issues, it's best to run `make rebuild` to
 ## Container Information
 
 - The client container exposes port 3000 and can be viewed by visiting http://localhost:3000
+- The server container exposes port 5000 and can be viewed by visiting http://localhost:5000
+- The database container exposes port 5432 and can be viewed by using pgAdmin.
 
 ## CI/CD
 
