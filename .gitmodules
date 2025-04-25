@@ -1,4 +1,4 @@
 [submodule "client"]
 	path = client
-	url = https://github.com/FreshworksStudio/minimal-react-boilerplate
+	url = https://github.com/marcocarpio/client.git
 	branch = master
