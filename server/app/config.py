@@ -9,3 +9,5 @@ class Config:
 class TestConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_TEST_URL', 'postgres://admin:password@database:5432/sample_db_test')
+
+SECRET_KEY = 'asd'
